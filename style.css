@@ -54,6 +54,7 @@ body {
     top: 20px;
     padding: 10px 20px;
     color: #abb995;
+    text-shadow: -4px 0px 10px rgb(0, 0, 0);
   }
 
   #restartBtn {
@@ -69,7 +70,6 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: all .3s ease-in;
-    text-shadow: -4px 0px 10px rgb(0, 0, 0);
   }
 
   #restartBtn:hover {
