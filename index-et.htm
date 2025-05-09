@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بازی اتحادهای ریاضی</title>
+  <link rel="stylesheet" href="style-et.css">
+  <link rel="stylesheet" href="font.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">بازی تشخیص اتحادهای ریاضی</h1>
+    <div id="question" class="question-box">اینجا سوال نمایش داده می‌شود</div>
+    <div class="options">
+      <button class="game-option" onclick="checkAnswer('جمله مشترک')">جمله مشترک</button>
+      <button class="game-option" onclick="checkAnswer('مزدوج')">مزدوج</button>
+      <button class="game-option" onclick="checkAnswer('مربع دو جمله‌ای')">مربع دو جمله‌ای</button>
+      <button class="game-option" onclick="checkAnswer('مربع سه جمله‌ای')">مربع سه جمله‌ای</button>
+    </div>
+    <div id="feedback" class="feedback"></div>
+    <div id="score" class="score">امتیاز: 0</div>
+    <button onclick="startGame()" class="game-option">شروع دوباره</button>
+  </div>
+
+  <script src="script-et.js"></script>
+</body>
+</html>

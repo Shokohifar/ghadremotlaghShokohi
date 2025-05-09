@@ -1,0 +1,114 @@
+body {
+    background: url(back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "yekanba";
+    text-align: center;
+    background-color: #f0f8ff;
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin: 40px;
+    color: #abb995;
+    text-shadow: -4px 0px 10px rgb(0, 0, 0);
+  }
+  
+  .game-board {
+    width: 360px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #abb995;
+    box-sizing: border-box;
+  }
+  
+  .card-front {
+    background-color: #384230;
+    color: #abb995;
+  }
+  
+  .card-back {
+    font-family: sans-serif;
+    background-color: #abb995;
+    color: #384230;
+    transform: rotateY(180deg);
+  }
+
+  #scoreBoard {
+    font-size: 30px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    color: #abb995;
+    text-shadow: -4px 0px 10px rgb(0, 0, 0);
+  }
+
+  #restartBtn {
+    font-family: "yekanba";
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: #abb995;
+    color: #384230;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+  }
+
+  #home {
+    font-family: "yekanba";
+    position: fixed;
+    right: 160px;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: #abb995;
+    color: #384230;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    text-decoration: none;
+  }
+
+  #restartBtn:hover, #home:hover {
+    background-color: #d0eaff;
+  }
+
