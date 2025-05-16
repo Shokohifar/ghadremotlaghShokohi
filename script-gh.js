@@ -63,7 +63,7 @@ function startGame() {
         card.classList.remove("flipped");
         card.addEventListener("click", () => flipCard(card));
       });
-    }, 2000);
+    }, 5000);
   }, 500);
 }
 
