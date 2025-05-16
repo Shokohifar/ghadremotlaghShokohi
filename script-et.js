@@ -52,7 +52,7 @@ function checkAnswer(selectedType) {
       score += 10;
       selectedBtn.style.backgroundColor = "#14c031";
     } else {
-      score -= 5;
+      score -= 2;
       selectedBtn.style.backgroundColor = "#c0143f";
       if (correctBtn) correctBtn.style.backgroundColor = "#14c031";
     }
